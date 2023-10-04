@@ -1,0 +1,328 @@
+/* Réinitialisation des styles par défaut */
+html  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body, h1, h2, ul, li, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.button {
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 15px;
+}
+.button:hover {
+    transform: scale(1.2);
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+header h1 a {
+    text-decoration: none;
+}
+header h1 a:hover {
+    text-decoration: underline whitesmoke;
+    color: white;
+}
+li a:hover {
+    color: rgb(70, 0, 128);
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+a {
+    cursor: pointer;
+}
+/* Styles de bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/**/
+.blogs {
+    margin-top: 15px;
+    width: 99%;
+    height: fit-content;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.heading {
+    background-color: #333;
+    height: 70px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.heading h2 {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.heading h2::before {
+    content: "> ";
+}
+.test {
+    width: 25vw;
+    max-width: 300px;
+    border: solid 2px;
+    height: 250px;
+    flex-grow: 1;
+    position: relative;
+    border-radius: 15px;
+}
+.test img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 12px 1px;
+}
+
+.test .description {
+    width: 100%;
+    min-height: 80px;
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 18px;
+    box-shadow: 0 -5px 5px 1px rgba(0, 0, 0, 0.41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s;
+}
+.description:hover {
+    height: 120px;
+}
+.description p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Styles des services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: scale(1.1);
+}
+
+/* Styles du formulaire de contact */
+form label, form textarea, form input, form button {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles de pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styles responsives */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        margin-left: 50px;
+        padding: 18px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.statistique {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.statistique div {
+    background-color: rgba(243, 243, 243, 0.411);
+    border-radius: 25px;
+    box-shadow: 0 0 10px 1px rgb(108, 108, 108);
+}
+.stars img {
+    mix-blend-mode: color-burn;
+    width: 40px;
+}
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 150px;
+    min-width: 250px;
+    border: none;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    display: none;
+    padding-bottom: 10px;
+}
+#subm {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    position: static;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    transform: translate(0%);
+    transition: 2s
+  }
+  .rate:not(:checked) > input {
+    position: absolute;
+    display: none
+  }
+  .rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #651d65
+  }
+  .rate:not(:checked) > label:before {
+    content: '★  '
+  }
+  .rate > input:checked ~ label {
+    color: #daa520
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+    color: #daa520
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+    color: red
+  }
+  .rate button {
+    display: none;
+    margin-top: 70px;
+    width: 70px;
+    height: 30px;
+    border: none;
+    transform: translate(40px);
+    background-color: transparent;
+    color: #daa520;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+    box-shadow: #daa520 0 0 0 1.5px;
+    border-radius: 9pt
+  }
+  .rate button:hover {
+    box-shadow: #daa520 0 0 0 1.5px,0 0 5px 2px rgba(218,165,32,.713) inset;
+    cursor: pointer
+  }

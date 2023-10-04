@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">PhotoMasters</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a onclick="alert('comming soon');">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="heading"><h2>Dernières nouvelles</h2></div>
+    <div class="blogs">
+        <div class="test"><img src="assets/cddcdf145c04f3d98420c2523b8f2799.png" alt="" onmouseover="show(this)" onmouseout="hide(this)"><div class="description" id="item1"><p>Recement mariee</p><p style="font-size: 11px;">le 02/10/2023</p></div></div>
+        <div class="test"><img src="assets/photo-1608009232260-9b527a5bb9bd.jpg" alt="" onmouseover="show(this)" onmouseout="hide(this)"><div class="description" id="item2"><p>Mariage en Afrique</p><p style="font-size: 11px;">le 28/09/2023</p></div></div>
+        <div class="test"><img src="assets/birthday-parties_1594_lr.jpg" alt="" onmouseover="show(this)" onmouseout="hide(this)"><div class="description" id="item2"><p>Fette d'anniversaire</p><p style="font-size: 11px;">le 22/07/2023</p></div></div>
+        <div class="test"><img src="assets/1280px-Birthday_party.jpg" alt="" onmouseover="show(this)" onmouseout="hide(this)"><div class="description" id="item2"><p>Fette d'anniversaire</p><p style="font-size: 11px;">le 12/02/2023</p></div></div>
+        <div class="test"><img src="assets/istockphoto-1288189469-612x612.jpg" alt="" onmouseover="show(this)" onmouseout="hide(this)"><div class="description" id="item2"><p>Des portrait professionelle</p><p style="font-size: 11px;"></p></div></div>
+        <div class="test"><img src="assets/istock-655664008.jpg" alt="" onmouseover="show(this)" onmouseout="hide(this)"><div class="description" id="item2"><p>Des paysages</p><p style="font-size: 11px;"></p></div></div>
+        <div class="test"><img src="assets/portrait-white-man-isolated_53876-40306.jpg" alt="" onmouseover="show(this)" onmouseout="hide(this)"><div class="description" id="item2"><p>Des portrait de visage</p><p style="font-size: 11px;"></p></div></div>
+    </div>
+    <div class="heading"><h2>Nos statistiques</h2></div>
+    <div class="statistique">
+        <div style="text-align: center;padding: auto;padding-top: 50px;"><h3 style="display: inline;">Nous avons <h3 style="color: purple;display: inline;">12</h3> <h3 style="display: inline;">photographes disponibles.</h3></div>
+        <div style="text-align: center;padding: auto;padding-top: 50px;"><h3 style="display: inline;">Nous avons <h3 style="color: crimson;display: inline;">52</h3> <h3 style="display: inline;">photographes active.</h3></h3></div>
+        <div style="text-align: center;padding: auto;padding-top: 10px;">
+            <h3>Nous avons la plus positive evaluation</h3>
+            <div class="stars" style="width: fit-content;margin-left: 50%;transform: translate(-50%);padding-inline: 15px;">
+                <img src="assets/fullstar.png" alt="">
+                <img src="assets/fullstar.png" alt="">
+                <img src="assets/fullstar.png" alt="">
+                <img src="assets/fullstar.png" alt="">
+                <img src="assets/half star.png" alt="">
+                <h2 style="display: inline;">4.</h2><h3 style="display: inline;">9</h3> 
+                <p>1507 vote</p>
+            </div>
+            <button onclick="popup(this)" class="button"> Rate </button>
+            <dialog id="rating" open>
+                <h3>Evaluer nos services</h3>
+                <div class="rate" id="rateform" style="margin-left: 50%;transform: translate(-50%);">
+                    <input type="radio" id="star5" name="rate" value="5" onmouseover="mouseOverEx()" onmouseout="mouseOut()" onclick="rateExcellent()" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" onmouseover="mouseOverGood()" onmouseout="mouseOut()" onclick="rateGood()"/>
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" onmouseover="mouseOverOr()" onmouseout="mouseOut()" onclick="rateOrdinary()"/>
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" onmouseover="mouseOverBad()" onmouseout="mouseOut()" onclick="rateBad()"/>
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" onmouseover="mouseOverVBad()" onmouseout="mouseOut()" onclick="rateVeryBad()" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+                <button onclick="closeThis()" id="subm">Submit</button>
+            </dialog>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container">
+        <p>&copy; 2023 PhotoMasters. Tous droits réservés.</p>
+    </div>
+</footer>
+</html>
